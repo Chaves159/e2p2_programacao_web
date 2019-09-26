@@ -31,7 +31,7 @@ botao.addEventListener("click", function() {
 
 function montaTr(obra) {
     var obraTr = document.createElement("tr");
-    obraTr.classList.add("paciente");
+    obraTr.classList.add("emprestimo");
     var vinculoTd = montaTd(solicitacao.vinculo, "info-vinculo");
     var tituloTd = montaTd(solicitacao.titulo, "info-titulo");
 

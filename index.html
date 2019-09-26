@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SISOLI</title>
+    <link rel="stylesheet" type="text/css" href="css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a  class="brand-logo right">SISOLI</a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <div class="brand-logo center">Sistema Para a Solicitação de Livros</div>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <section class="container">
+            <nav>
+                <div class="nav-wrapper">
+                    <h2>Livros Solicitados</h2>
+                </div>
+            </nav>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Vinculo</th>
+                        <th>Titulo</th>
+                        <th>Autor</th>
+                        <th>Edição</th>
+                        <th>ISSN</th>
+                        <th>Ano da Publicação</th>
+                        <th>Editora</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-obras">
+                    <tr class="paciente">
+                        <td class="info-vinculo"></td>
+                        <td class="info-titulo"></td>
+                        <td class="info-autor"></td>
+                        <td class="info-edicao"></td>
+                        <td class="info-issn"></td>
+                        <td class="info-ano"></td>
+                        <td class="info-editora"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+    </main>
+    <section class="container">
+        <nav>
+            <div class="nav-wrapper">
+                <h2 id="titulo-form">Adicionar Pedidos</h2></div>
+        </nav>
+
+        <form id="form-adiciona" class="col s12" class="input-field col s6">
+            <span id="erros"></span>
+            <div class="grupo" class="row">
+                <label for="vinculo">Vinculo:</label>
+                <input id="vinculo" name="vinculo" type="text" placeholder="digite o seu vinculo com a instituição" class="campo">
+            </div>
+            <div class="grupo" class="input-field col s6">
+                <label for="titulo">Titulo:</label>
+                <input id="titulo" name="titulo" type="text" placeholder="digite o titulo" class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="autor">Autor:</label>
+                <input id="autor" name="autor" type="text" placeholder="digite nome do autor" class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="edicao">Edição:</label>
+                <input id="edicao" type="text" placeholder="digite a edição" class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="issn">ISSN:</label>
+                <input id="issn" type="text" placeholder="digite o issn" class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="ano">Ano de Publicação:</label>
+                <input id="ano" type="text" placeholder="digite o ano da Publicação" class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="editora">Editora:</label>
+                <input id="editora" type="text" placeholder="digite o nome da editora" class="campo campo-medio">
+            </div>
+            <button id="adicionar-pedido" class="btn  waves-effect waves-light">Solicitar Livro</button>
+        </form>
+    </section>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Sistema para Solicitação de Livros IFCE.</h5>
+
+                </div>
+                <div class="col l4 offset-l2 s12">
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2019 Copyright
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/principal.js"></script>
+
+</body>
+
+</html>
